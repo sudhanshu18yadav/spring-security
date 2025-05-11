@@ -60,8 +60,18 @@ public class ProductController {
     }
 
     @PostMapping("/save")
-    public Product MultiParamTest(@PathParam(value = "name") String name,
-            @PathParam(value = "desc") String desc) {
+    public Product MultiParamTest(@PathParam(value = "name") String name, @PathParam(value = "desc") String desc) {
         return productRepo.save(new Product().setName(name).setDescription(desc));
     }
+
+    @GetMapping("/get-all-by-name")
+    public List<Product> GetllByName(@RequestParam(value = "name") String name) {
+        return productRepo.findAllByName(name);
+    }
+    
+    @GetMapping("/greater-than")
+    public List<String> GreaterThan() {
+        return productRepo.findAllIdGreaterThan50();
+    }
+    
 }
