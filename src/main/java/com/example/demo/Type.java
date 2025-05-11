@@ -12,7 +12,7 @@ public class Type {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private String desc;
+    private String description;
 
     public String getName() {
         return this.name;
@@ -28,11 +28,11 @@ public class Type {
     }
 
     public Type setDesc(String _desc) {
-        this.desc = _desc;
+        this.description = _desc;
         return this;
     }
 
     public String getDesc() {
-        return this.desc;
+        return this.description;
     }
 }

@@ -14,12 +14,6 @@ public class Product {
     private String name;
     private String description;
 
-    public Product(){}
-    
-    public Product (String _name, String _desc){
-        this.name = _name;
-        this.description = _desc;
-    }
     public Product setId(int id) {
         this.id = id;
         return this;
