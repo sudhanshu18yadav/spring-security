@@ -1,0 +1,11 @@
+server:
+    port : 4200
+
+spring:
+    security:
+        oauth2:
+            client:
+                registration:
+                    github:
+                        clientId: Ov23liVg1LGeQN5qIRdr
+                        clientSecret: 7acf7140d74fbe2ac561edcd8d6967e1b2dc1ea9
